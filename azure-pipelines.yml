@@ -38,6 +38,7 @@ stages:
         tags: |
           $(tag)
   - job: PreReleasePrepForInsurancev2Microservice
+    dependsOn: Build
     displayName: Pre Release Preparation For Insurancev2 Microservice
     pool:
       vmImage: $(vmImageName)
